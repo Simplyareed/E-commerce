@@ -1,5 +1,7 @@
 const express = require('express');
-const routes = require('./routes');
+console.log('importing routes');
+const routes = require('C:/Users/Adam/Documents/OSU-projects/E-commerce/Develop/routes');
+console.log('Routes imported successfully', routes);
 // import sequelize connection
 const sequelize = require('./config/connection');
 
