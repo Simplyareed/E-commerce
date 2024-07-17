@@ -81,6 +81,8 @@ router.put("/:id", async (req, res) => {
         ProductTag.bulkCreate(newProductTags),
       ]);
     }
+  } catch (err) {
+    res.status(400).json({ message: "Update failed", error: err });
   }
 });
 
